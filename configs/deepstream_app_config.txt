@@ -1,0 +1,16 @@
+[application]
+enable-perf-measurement=1
+
+[source0]
+enable=1
+type=3
+uri=file:///opt/nvidia/deepstream/samples/streams/sample_720p.h264
+gpu-id=0
+
+[sink0]
+enable=1
+type=2
+sync=0
+
+[osd]
+enable=1
