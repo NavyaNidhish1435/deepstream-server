@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  deepstream:
+    build: .
+    container_name: deepstream_server
+    restart: always
+    runtime: nvidia
+
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+
+    network_mode: host
+    stdin_open: true
+    tty: true
