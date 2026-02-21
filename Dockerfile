@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/deepstream:6.4-triton-multiarch
+FROM nvcr.io/nvidia/deepstream:6.4-samples-multiarch
 
 ENV DEBIAN_FRONTEND=noninteractive
 
